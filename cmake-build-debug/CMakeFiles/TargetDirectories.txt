@@ -1,0 +1,3 @@
+/home/giuseppe/CLionProjects/kernel_tutorial/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/giuseppe/CLionProjects/kernel_tutorial/cmake-build-debug/CMakeFiles/kernel_tutorial.dir
+/home/giuseppe/CLionProjects/kernel_tutorial/cmake-build-debug/CMakeFiles/edit_cache.dir
