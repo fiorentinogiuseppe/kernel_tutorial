@@ -1,0 +1,5 @@
+https://www.gnu.org/software/grub/manual/multiboot/multiboot.html
+3.1.2 The magic fields of Multiboot header
+
+https://docs.oracle.com/cd/E26502_01/html/E28388/eoiyg.html
+.long expression1, expression2, ..., expressionN
