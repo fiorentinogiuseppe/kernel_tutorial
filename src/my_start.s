@@ -30,7 +30,7 @@
   .align 16
   stack_bottom:
     .skip 4096 // Reservando 4k para a stack
-  stack_top
+  stack_top:
 
 // ------------------- CODIGO ASSEMBLY ------------------- //
 .section .text

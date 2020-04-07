@@ -63,7 +63,7 @@ void term_putc(char c)
       // Printa o caracter e move o carro para prox color
       // Parecido com o que foi feito na funcao term_init
       const size_t index = (VGA_COLS * term_row) + term_col; // Calcula o index
-      vga_buffer[índex] = ((uint16_t) term_color << 8) | c; // Coloca o caracter na variavel c como caracter para por na tela
+      vga_buffer[index] = ((uint16_t) term_color << 8) | c; // Coloca o caracter na variavel c como caracter para por na tela
       term_col ++;
       break;
     }

@@ -23,7 +23,7 @@ This will create two object files named start.o and kernel.o ready for linking.
 
 ## Linking
 `
-i686-elf-gcc -ffreestanding -nostdlib -g -T my_linker.ld my_start.o my_kernel.o -o my_mykernel.elf -lgcc
+i686-elf-gcc -ffreestanding -nostdlib -g -T my_linker.ld my_start.o my_kernel.o -o mykernel.elf -lgcc
 `
 ### There are several parts to the above command
 * -nostdlib is used to specify that we aren't linking against a C standard library. This should be obvious, since we're running freestanding.
@@ -34,7 +34,7 @@ i686-elf-gcc -ffreestanding -nostdlib -g -T my_linker.ld my_start.o my_kernel.o 
 * After all that, the linker command should have produced a file named mykernel.elf. This is our kernel image.
 * To run your kernel with QEMU, you can use the following command
 `
-qemu-system-i386 -kernel my_mykernel.elf
+qemu-system-i386 -kernel mykernel.elf
 `
 
 #  Running The Kernel With GRUB And Real Hardware  
