@@ -3,3 +3,6 @@ https://www.gnu.org/software/grub/manual/multiboot/multiboot.html
 
 https://docs.oracle.com/cd/E26502_01/html/E28388/eoiyg.html
 .long expression1, expression2, ..., expressionN
+
+https://sourceware.org/binutils/docs/ld/Scripts.html
+3 Linker Scripts
