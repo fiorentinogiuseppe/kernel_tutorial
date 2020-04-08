@@ -40,7 +40,9 @@ qemu-system-i386 -kernel mykernel.elf
 http://nickdesaulniers.github.io/blog/2018/10/24/booting-a-custom-linux-kernel-in-qemu-and-debugging-it-with-gdb/
 
 #  Running The Kernel With GRUB And Real Hardware  
-Doing...
+`
+grub-mkrescue isoroot/ -o mykernel.iso
+`
 
 ## Reference
 > - https://wiki.osdev.org/GCC_Cross-Compiler#Downloading_the_Source_Code
