@@ -18,7 +18,7 @@
 .section .multiboot
   .align 4 // alinhamento sempre multiplos de 4 bytes
   .long MB_MAGIC // Gera um int 32bits e usa os dados gerados anteriormente
-  .long MB_MAGIC // Gera um int 32bits e usa os dados gerados anteriormente
+  .long MB_FLAGS // Gera um int 32bits e usa os dados gerados anteriormente
   .long MB_CHECKSUM // Gera um int 32bits e usa os dados gerados anteriormente
 // Na seção .bss, a diretiva .long não é válida.
 // No x86, a pilha cresce PARA BAIXO

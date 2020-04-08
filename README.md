@@ -36,6 +36,8 @@ i686-elf-gcc -ffreestanding -nostdlib -g -T my_linker.ld my_start.o my_kernel.o 
 `
 qemu-system-i386 -kernel mykernel.elf
 `
+# Debugar
+http://nickdesaulniers.github.io/blog/2018/10/24/booting-a-custom-linux-kernel-in-qemu-and-debugging-it-with-gdb/
 
 #  Running The Kernel With GRUB And Real Hardware  
 Doing...

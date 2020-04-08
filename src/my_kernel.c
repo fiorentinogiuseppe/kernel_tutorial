@@ -13,7 +13,7 @@
 #endif
 
 // A matriz gráfica de vídeo (VGA) é um padrão gráfico para o controlador de vídeo
-volatile uint16_t* vga_buffer = (uint16_t*) 0xB8000;
+volatile uint16_t* vga_buffer = (uint16_t*)0xB8000;
 
 // buffer do modo de texto VGA tem um tamanho de 80x25 caracteres
 // O buffer do modo de texto VGA possui tamanho (VGA_COLS * VGA_ROWS).
@@ -30,7 +30,7 @@ uint8_t term_color = 0x0F; // Fundo preto e letras brancas
 void term_init(){
   // Limpe o buffer do modo de texto
   for (int col = 0; col < VGA_COLS; col++){
-    for (int row = 0; row < VGA_ROWS; col++){
+    for (int row = 0; row < VGA_ROWS; row++){
       // Encontramos um índice no buffer para o caracter
       const size_t index = (VGA_COLS * row) + col;
       // As entradas no buffer VGA assumem o formato binário BBBBFFFFCCCCCCCC, onde:
