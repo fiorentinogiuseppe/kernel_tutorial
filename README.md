@@ -3,7 +3,7 @@
 Este projeto foi elaborado para que eu pudesse aprender um pouco mais sobre o desenvolvimento do kernel em uma arquitetura x86. Este projeto utiliza um conjunto de linguagens para desenvolver o kernel usando x86 assembly :heart_eyes:, C :heart: e o linker command language :cupid:. Diferente do [projeto de feriadão x86](https://github.com/fiorentinogiuseppe/x86_course) que utiliza apenas o x86 e é um projeto mais desenvolvido pois aceita input do usuário.
 
 Este projeto tem como base o artigo do site
-[OSDev.org](https://wiki.osdev.org/Main_Page) desenvolvido por [Bare Bones e evoluido por Zesterer](https://wiki.osdev.org/User:Zesterer/Bare_Bones). Irei me conter ao código pulando um pouco dos avisos e requisitos de conhecimento para desenvolver o projeto. Indico olhar o artigo original para ver este na integra o `warning`.
+[OSDev.org](https://wiki.osdev.org/Main_Page) desenvolvido por [Bare Bones e evoluido por Zesterer](https://wiki.osdev.org/User:Zesterer/Bare_Bones). Irei me conter ao código pulando um pouco dos avisos e requisitos de conhecimento para desenvolver o projeto. Indico olhar o artigo original para ver este na íntegra o `warning`.
 
 ## GCC Cross-Compiler
 
@@ -33,7 +33,7 @@ Todo os códigos necessários para o projeto estão no diretório [/src]() estes
 ##  Compilando e linkando
 
 
-### Compilling
+### Compilando
 Para compilar nosso código os comandos são os seguintes:
 ```
 $ i686-elf-gcc -std=gnu99 -ffreestanding -g -c my_start.s -o my_start.o
@@ -85,7 +85,7 @@ Para anexar seu kernel ao GRUB e testá-lo em hardware real, você precisará pr
 grub-mkrescue --version
 ```
 
-Caso a saída seja a versão indica que você possui o grub instalado. Assim o próximo passo é criar uma árvore de diretórios para nossa compilação ISO do GRUB. Eu chamo de 'isoroot', como no tutorial inicial. Dentro desse diretório, tem que existir a seguinte arvore de arquivos
+Caso a saída seja a versão indica que você possui o grub instalado. Assim o próximo passo é criar uma árvore de diretórios para nossa compilação ISO do GRUB. Eu chamo de 'isoroot', como no tutorial inicial. Dentro desse diretório, tem que existir a seguinte árvore de arquivos
 
 ```
 ├── isoroot
@@ -100,8 +100,8 @@ E com isso no arquivo `grub.cfg` podemos por o seguinte:
 
 ```
 menuentry "My Kernel" {
-	multiboot /boot/mykernel.elf
-	boot
+    multiboot /boot/mykernel.elf
+    boot
 }
 ```
 
@@ -118,7 +118,7 @@ Com isso poderemos executar nosso kernel em um hardware real ou utilizar no `vir
 
 #### Explicação dos comandos acima
 * o isoroot/
-  * pode ser qualquer diretorio em que contena nossos arquivos grub.cfg e mykernel.elf.
+  * pode ser qualquer diretório em que contenha nossos arquivos grub.cfg e mykernel.elf.
 * -o mykernel.iso
   * mykernel.iso pode ser qualquer nome que desejar.
 
